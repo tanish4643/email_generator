@@ -9,8 +9,8 @@ function generateDomain(body) {
             const formattedName = utils.findFormat(domain)(fullName);
             
             resolve({
-                fullName, domain,
-                email: `${formattedName}@${domain}`
+                status: true,
+                message: `${formattedName}@${domain}`
             });
         }
         catch(err){
